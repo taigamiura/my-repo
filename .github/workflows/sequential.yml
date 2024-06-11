@@ -1,0 +1,15 @@
+name: Sequential
+on: push
+jobs:
+  first:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "First job"
+  second:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "Second job"
+  third:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "Third job"
